@@ -11,8 +11,13 @@ body {
     background-attachment: fixed;
     width: 100%;
 }
-
-
+@media screen and (max-width:500px){
+    body {
+       
+        background-image: url("../pic/bg-white-500.jpg");
+     
+    }  
+}
 
 
 h1,
@@ -613,6 +618,7 @@ img[alt="wave-top"] {
     .slick-next {
         right: -70px;
     }
+}
 
 
 
@@ -628,7 +634,6 @@ img[alt="wave-top"] {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 50px 0;
     }
 
 
@@ -683,11 +688,16 @@ img[alt="wave-top"] {
 
         @media screen and (max-width:500px) {
             .wraps {
-                width: 360px;
+                width: 300px;
             }
 
             .wrap {
-                width: 120px;
+                width: 100px;
+            }
+
+            .use{
+                padding-top: 50px;
+                padding-bottom: 50px;
             }
 
         }
