@@ -14,6 +14,7 @@ body {
 
 
 
+
 h1,
 h2,
 h3,
@@ -73,7 +74,7 @@ img {
     margin: 0 auto;
 }
 
-img[alt="bg-green-bottom"]{
+img[alt="bg-green-bottom"] {
     margin-top: -10px;
 }
 
@@ -200,7 +201,7 @@ label {
     transition: .3s;
 }
 
-.menu-content ul{
+.menu-content ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,7 +216,7 @@ label {
 
 
 .menu-content a:hover {
-    color:#ffeaa7;
+    color: #ffeaa7;
     letter-spacing: 0.7em;
 }
 
@@ -306,6 +307,7 @@ label {
         width: 400px;
     }
 }
+
 @media screen and (max-width:500px) {
     img[alt="Kids"] {
         width: 300px;
@@ -597,182 +599,195 @@ img[alt="wave-top"] {
     .dogs {
         width: 200px;
     }
-}
 
-
-
-
-
-/*三種用途*/
-
-.use {
-    background-image: url("../pic/bg-green.jpg");
-    background-repeat: repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.wraps {
-    display: flex;
-    flex-direction: row;
-    width: 600px;
-
-}
-
-
-
-.wrap {
-    width: 200px;
-    position: relative;
-    background-color: #E95404;
-}
-
-.wrap h4 {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    color: #fff;
-    font-size: 18px;
-}
-
-.wrap img {
-    transition: .3s;
-    opacity: 1;
-    width: 100%;
-}
-
-.wrap:hover h4 {
-    display: block;
-}
-
-.wrap img:hover {
-    opacity: 0.5;
-}
-
-@media screen and (max-width:650px) {
-    .wraps {
-        width: 450px;
+    .slick-prev,
+    .slick-next {
+        width: 56px;
+        height: 56px;
     }
 
-    .wrap {
-        width: 150px;
+    .slick-prev {
+        left: -70px;
+    }
+
+    .slick-next {
+        right: -70px;
     }
 
 
-    @media screen and (max-width:500px) {
-        .wraps {
-            width: 300px;
-        }
-    
-        .wrap {
-            width: 100px;
-        }
-    
-    }
-}
 
 
 
-.use h2 {
-    color: #ffeaa7;
-}
+    /*三種用途*/
 
-.use h3 {
-    font-size: 20px;
-    color: #fff;
-}
-
-
-
-/*贊助*/
-
-.money .item {
-    width: 550px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #07B0BB;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 10px 10px #07B0BB;
-    margin: 30px;
-}
-
-.money .item:hover {
-
-    box-shadow: 10px 10px #ff7675;
-    border: 3px solid #ff7675;
-}
-
-
-
-.money-item {
-    display: flex;
-    justify-content: center;
-}
-
-img[alt="love1"],
-img[alt="love2"] {
-    margin-left: 10px;
-}
-
-.money p {
-    font-size: 16px;
-    color: #EB6880;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 0 20px 0;
-}
-
-table {
-    text-align: center;
-    color: #07B0BB;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    width: 300px;
-    z-index: -1;
-}
-
-table td {
-    font-size: 18px;
-    font-weight: 700;
-    padding: 5px;
-    letter-spacing: 0.05em;
-}
-
-@media screen and (max-width:1500px) {
-    .money-item {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .money .item {
-        margin-top: 30px;
-    }
-}
-
-
-@media screen and (max-width:650px) {
-    .money .item {
-        width: 300px;
+    .use {
+        background-image: url("../pic/bg-green.jpg");
+        background-repeat: repeat;
+        background-attachment: fixed;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
 
-    table {
-        width: 292px;
+    .wraps {
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+
+    }
+
+
+
+    .wrap {
+        width: 200px;
+        position: relative;
+        background-color: #E95404;
+    }
+
+    .wrap h4 {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .wrap img {
+        transition: .3s;
+        opacity: 1;
+        width: 100%;
+    }
+
+    .wrap:hover h4 {
+        display: block;
+    }
+
+    .wrap img:hover {
+        opacity: 0.5;
+    }
+
+    @media screen and (max-width:650px) {
+        .wraps {
+            width: 450px;
+        }
+
+        .wrap {
+            width: 150px;
+        }
+
+
+        @media screen and (max-width:500px) {
+            .wraps {
+                width: 300px;
+            }
+
+            .wrap {
+                width: 100px;
+            }
+
+        }
+    }
+
+
+
+    .use h2 {
+        color: #ffeaa7;
+    }
+
+    .use h3 {
+        font-size: 20px;
+        color: #fff;
+    }
+
+
+
+    /*贊助*/
+
+    .money .item {
+        width: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #07B0BB;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 10px 10px #07B0BB;
+        margin: 30px;
+    }
+
+    .money .item:hover {
+
+        box-shadow: 10px 10px #ff7675;
+        border: 3px solid #ff7675;
+    }
+
+
+
+    .money-item {
+        display: flex;
+        justify-content: center;
     }
 
     img[alt="love1"],
     img[alt="love2"] {
-        margin: 10px auto;
-        width: 100px;
+        margin-left: 10px;
     }
-}
+
+    .money p {
+        font-size: 16px;
+        color: #EB6880;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+    table {
+        text-align: center;
+        color: #07B0BB;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        width: 300px;
+        z-index: -1;
+    }
+
+    table td {
+        font-size: 18px;
+        font-weight: 700;
+        padding: 5px;
+        letter-spacing: 0.05em;
+    }
+
+    @media screen and (max-width:1500px) {
+        .money-item {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .money .item {
+            margin-top: 30px;
+        }
+    }
+
+
+    @media screen and (max-width:650px) {
+        .money .item {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        table {
+            width: 292px;
+        }
+
+        img[alt="love1"],
+        img[alt="love2"] {
+            margin: 10px auto;
+            width: 100px;
+        }
+    }
